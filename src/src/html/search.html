@@ -1,0 +1,16 @@
+<div id="search">
+    <!-- :はv-bindの省略記法 -->
+    <!-- @はv-onの省略記法 -->
+    <el-form :inline="true">
+        <el-input-item label="キーワード">
+            <el-input type="text" size="large" v-model="keyword"></el-input>
+        </el-input-item>
+        <el-input-item label="キーワード">
+            <el-button type="primary" @click="onclick">検索</el-button>
+        </el-input-item>
+    </el-form>
+    <hr />
+    <BookInfo v-for="(book, i) of books"
+        :linkable="true" :book="book" :index="i + 1" :key="book.isbn">
+    </BookInfo>
+</div>

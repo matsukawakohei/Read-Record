@@ -1,0 +1,14 @@
+<!-- :はv-bindの省略記法 -->
+<!-- @はv-onの省略記法 -->
+<div class="clearfix" :class="{ linkable }" @click="onclick">
+    <div class="image"><img :src="book.image" /></div>
+    <div class="details">
+        <ul>
+            <li v-if="index">{{ index }}.</li>
+            <li>{{ book.title }} ({{ book.price }})</li>
+            <li>{{ book.author }} 著</li>
+            <li>{{ book.publisher }} /刊</li>
+            <li>{{ book.published }} /発売</li>
+        </ul>
+    </div>
+</div>
