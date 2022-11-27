@@ -1,17 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-/**
- * @todo
- * コンポーネントを作成
- */
-import BookSearch from '../views.BookSearch.vue'
-import BookForm from '../views.BookForm.vue'
+import TopHome from '../views/TopHome.vue'
+import BookSearch from '../views/BookSearch.vue'
+import BookForm from '../views/BookForm.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'TopHome',
+    component: TopHome
   },
   {
     path: '/search',
