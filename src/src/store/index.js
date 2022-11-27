@@ -53,7 +53,7 @@ export default createStore({
   plugins: [
     createPersistedState({
       key: 'read-recode',
-      storage: locallStorage
+      storage: localStorage
     })
   ]
 })
