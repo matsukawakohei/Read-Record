@@ -9,7 +9,7 @@
 ```
 vue create .
 
-# --no-gitオプションが効かなかったためv
+# --no-gitオプションが効かなかったため
 rm -rf .git*
 
 vue add element-plus
